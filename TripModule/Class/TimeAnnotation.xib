@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hzs-Sx-mWK" customClass="TimeAnnotationView" customModule="TripModule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhb-oy-WrS">
+                    <rect key="frame" x="0.0" y="24" width="1194" height="790"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                    <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95323844828738546" green="0.94863343162899239" blue="0.95784346494577866" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Dhb-oy-WrS" firstAttribute="leading" secondItem="Ild-Z9-Vv4" secondAttribute="leading" id="8bE-Of-ub5"/>
+                <constraint firstItem="Dhb-oy-WrS" firstAttribute="bottom" secondItem="Ild-Z9-Vv4" secondAttribute="bottom" id="ZRH-Zw-tWs"/>
+                <constraint firstItem="Ild-Z9-Vv4" firstAttribute="trailing" secondItem="Dhb-oy-WrS" secondAttribute="trailing" id="nS1-AW-8Qw"/>
+                <constraint firstItem="Dhb-oy-WrS" firstAttribute="top" secondItem="Ild-Z9-Vv4" secondAttribute="top" id="zft-08-5WG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Ild-Z9-Vv4"/>
+            <connections>
+                <outlet property="label_time" destination="Dhb-oy-WrS" id="93Z-GQ-JsF"/>
+            </connections>
+            <point key="canvasLocation" x="-264.321608040201" y="92.805755395683462"/>
+        </view>
+    </objects>
+</document>
