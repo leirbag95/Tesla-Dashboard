@@ -53,7 +53,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // preliminary settings for map view & location
         _locationManager.requestWhenInUseAuthorization()
         _locationManager.delegate = self
@@ -167,6 +166,23 @@ class ViewController: UIViewController {
         stackView_setNavigation.isHidden = false
         image_searching.image = UIImage(named:"icon_search")
         //TODO: Faire apparaitre les clients
+    }
+    
+    /**
+     Display nearest fuel station
+     */
+    @IBAction func showNearestStation(_ sender:UIButton) {
+        if sender.tag == 0 {
+            APIManager().getNearestFuelStation(mapView: mapView, currentLocation:mapView.userLocation.coordinate)
+            sender.tag = 1
+        } else {
+            for annotation in mapView.annotations {
+                if annotation is StationAnnotation {
+                    mapView.removeAnnotation(annotation)
+                }
+            }
+            sender.tag = 0
+        }
     }
     
     /**

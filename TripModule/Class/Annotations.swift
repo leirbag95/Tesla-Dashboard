@@ -57,3 +57,33 @@ final class TimeAnnotation: NSObject, MKAnnotation {
         }
     }
 }
+
+
+final class StationAnnotation: NSObject, MKAnnotation {
+    
+    // MARK: var variables
+    var coordinate: CLLocationCoordinate2D
+    private var _identifier:String?
+    private var _name:String = ""
+    
+    init(coordinate:CLLocationCoordinate2D, identifier:String?, name:String = "") {
+        self.coordinate = coordinate
+        self._identifier = identifier
+        
+        super.init()
+    }
+    
+    public var id:String {
+        get {
+            return self._identifier!
+        }
+    }
+    
+    public var name:String {
+        get {
+            return self._name
+        }
+    }
+    
+  
+}

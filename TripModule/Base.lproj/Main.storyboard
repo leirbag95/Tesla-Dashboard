@@ -60,6 +60,9 @@
                                                     <constraint firstAttribute="height" constant="30" id="zDK-lw-jDb"/>
                                                 </constraints>
                                                 <state key="normal" image="icon_shop"/>
+                                                <connections>
+                                                    <action selector="showNearestStation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTx-td-jN4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
