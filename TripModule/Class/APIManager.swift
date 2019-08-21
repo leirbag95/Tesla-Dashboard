@@ -15,7 +15,7 @@ class APIManager {
      You can start using this key to make web service requests. Simply pass your key in the URL when making a web request.
      ex: https://developer.nrel.gov/api/alt-fuel-stations/v1.json?limit=10&latitude=48.889375&longitude=2.280486&api_key=UowR7aYi8t14opqu5wsa1PxY9ZU3ybgJb4pPTGL2&format=JSON
      */
-    let API_KEY = "UowR7aYi8t14opqu5wsa1PxY9ZU3ybgJb4pPTGL2"
+    let API_KEY = "your_api_key"
     
     
     public func getNearestFuelStation(mapView:MKMapView, currentLocation:CLLocationCoordinate2D) {
