@@ -418,6 +418,8 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         tableView_details.setEditing(editing && !tableView_details.isEditing, animated: true)
     }
     
+    
+    //TODO: use displayCell for dsplaying cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if view_details.isHidden {
             let cellCompletion = tableView.dequeueReusableCell(withIdentifier: "cell_completion", for: indexPath) as! LocationCompletionTableViewCell
